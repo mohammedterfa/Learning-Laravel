@@ -13,7 +13,9 @@ class GuitarsController extends Controller
      */
     public function index()
     {
-        //
+        //GET
+
+        return view('guitars.index');
     }
 
     /**
@@ -23,7 +25,7 @@ class GuitarsController extends Controller
      */
     public function create()
     {
-        //
+        //GET
     }
 
     /**
@@ -34,7 +36,7 @@ class GuitarsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //POST
     }
 
     /**
@@ -45,7 +47,7 @@ class GuitarsController extends Controller
      */
     public function show($id)
     {
-        //
+        //GET
     }
 
     /**
@@ -56,7 +58,7 @@ class GuitarsController extends Controller
      */
     public function edit($id)
     {
-        //
+        //GET
     }
 
     /**
@@ -68,7 +70,7 @@ class GuitarsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //POST , PUT M PATCH
     }
 
     /**
@@ -79,6 +81,6 @@ class GuitarsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        //DELETE
     }
 }
