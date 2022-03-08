@@ -8,3 +8,18 @@ body {
 nav a {
     padding: 0.5rem;
 }
+.border-l{
+    border-width: .07rem;
+}
+
+.form div{
+    margin-bottom: 15px;
+}
+
+.form div>input {
+    display: block;
+}
+
+.form div>buttom {
+    padding: 5px;
+}

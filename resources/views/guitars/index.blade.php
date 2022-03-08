@@ -14,6 +14,9 @@
                         <li>
                             made by : {{ $guitar['brand'] }}
                         </li>
+                        <li>
+                            year made : {{ $guitar['year_made'] }}
+                        </li>
                     </ul>
             </div>
         @endforeach
