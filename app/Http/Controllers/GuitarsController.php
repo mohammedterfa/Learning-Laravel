@@ -49,12 +49,17 @@ class GuitarsController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'guitar-name' => 'required',
+            'brand' => 'required',
+            'year' => ['required','integer'],
+        ]);
         //POST
         $guitar = new Guitar();
 
-        $guitar->name = $request->input('guitar-name');
-        $guitar->brand = $request->input('brand');
-        $guitar->year_made = $request->input('year');
+        $guitar->name = strip_tags($request->input('guitar-name'));
+        $guitar->brand = strip_tags($request->input('brand'));
+        $guitar->year_made = strip_tags($request->input('year'));
 
         $guitar->save();
 
