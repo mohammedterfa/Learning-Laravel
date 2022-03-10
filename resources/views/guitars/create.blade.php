@@ -5,8 +5,8 @@
     <form class="form bg-white p-6 border-l" method="POST" action="{{ route('guitars.store') }}">
     @csrf
     <div>
-        <label class="text-sm" for="guitar-name">Guitar Name</label>
-        <input class="text-lg border-l" type="text" id="guitar-name" value="{{ old('guitar-name') }}" name="guitar-name">
+        <label class="text-sm" for="name">Guitar Name</label>
+        <input class="text-lg border-l" type="text" id="name" value="{{ old('name') }}" name="name">
         @error('guitar-name')
             <div class="form-error">
                 {{ $message }}
@@ -23,8 +23,8 @@
         @enderror
     </div>
     <div>
-        <label class="text-sm" for="year">Year Made</label>
-        <input class="text-lg border-l" type="text" id="year" value="{{ old('year') }}" name="year">
+        <label class="text-sm" for="year_made">Year Made</label>
+        <input class="text-lg border-l" type="text" id="year_made" value="{{ old('year_made') }}" name="year_made">
         @error('year')
             <div class="form-error">
                 {{ $message }}

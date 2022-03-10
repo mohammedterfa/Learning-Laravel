@@ -54,9 +54,9 @@ class GuitarsController extends Controller
         //POST
         $guitar = new Guitar();
 
-        $guitar->name = $data['guitar-name'];
+        $guitar->name = $data['name'];
         $guitar->brand = $data['brand'];
-        $guitar->year_made = $data['year'];
+        $guitar->year_made = $data['year_made'];
 
         $guitar->save();
 
@@ -105,9 +105,9 @@ class GuitarsController extends Controller
         //POST
 
 
-        $guitar->name = $data['guitar-name'];
+        $guitar->name = $data['name'];
         $guitar->brand = $data['brand'];
-        $guitar->year_made = $data['year'];
+        $guitar->year_made = $data['year_made'];
 
         $guitar->save();
 
